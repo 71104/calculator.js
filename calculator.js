@@ -24,7 +24,7 @@ function Lexer(input) {
 			return token = '(';
 		} else if (match(/^\)/)) {
 			return token = ')';
-		} else if (match(/^[0-9]+(\.[0.9]+)?\b/)) {
+		} else if (match(/^[0-9]+(\.[0-9]+)?\b/)) {
 			label = parseFloat(label);
 			return token = 'number';
 		} else if (match(/^pi\b/)) {
